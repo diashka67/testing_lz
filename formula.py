@@ -8,20 +8,23 @@ def handtesting():
     try:
         result = formula(a,b,f)
         print(result)
+        return result
+        
+    except ZeroDivisionError:
+        print("Ошибка: Деление на ноль (a - b == 0)")
+        return "Деление на ноль"
 
-    except (ZeroDivisionError):
-        result = 'Деление на ноль'
-        print('Деление на ноль')
+    except ValueError:
+        print("Ошибка: Нельзя взять корень из отрицательного числа")
+        return "Нельзя взять корень из отрицательного числа"
 
+    except TypeError:
+        print("Ошибка: Неверный тип данных")
+        return "Ошибка типов данных"
 
-    except(TypeError):
-        result = 'Ошибка типов данных'
-        print('Ошибка типов данных')
-
-    except(ValueError):
-        result = 'Нельзя взять корень отрицательного числа'
-        print('Нельзя взять корень отрицательного числа')
-    return print(result)
+    except Exception as e:      
+        print(f"Неизвестная ошибка: {e}")
+        return "Неизвестная ошибка"
 """
 1. Деление на ноль при (a - b) == 0
 2. Все нули
