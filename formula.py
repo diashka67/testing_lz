@@ -1,12 +1,12 @@
 import math
 
-def formula(a,b,c,d,f):
+def formula(a,b,f):
     return math.sqrt(a - b) / (a - b) + math.sqrt(f)
 
 
 def handtesting():
     try:
-        result = formula(a,b,c,d,f)
+        result = formula(a,b,f)
         print(result)
 
     except (ZeroDivisionError):
