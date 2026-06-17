@@ -70,4 +70,4 @@ class Test_auto(unittest.TestCase):
         self.assertAlmostEqual(result, math.sqrt(1)/1 + 5)
 
 if __name__ == "__main__":
-    unittest.main(verbosity=2) #чтобы выводило красиво, а то были неэстетичные точки, которые показывали успешное выполнение
+    unittest.main(verbosity=2) #чтобы выводило красиво, с большим колличеством инфы
