@@ -1,5 +1,5 @@
 import unittest
-from heand import hand
+from formula import formula, handtesting
 
 class Test_hand(unittest.TestCase):
 
