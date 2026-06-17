@@ -38,4 +38,4 @@ class Test_hand(unittest.TestCase):
         self.assertEqual(result, "Ошибка типов данных")
 
 if __name__ == "__main__":
-    unittest.main(verbosity=0)
+    unittest.main(verbosity=2) #чтобы выводило красиво, а то были неэстетичные точки, которые показывали успешное выполнение
