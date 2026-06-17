@@ -4,10 +4,10 @@ def formula(a,b,f):
     return math.sqrt(a - b) / (a - b) + math.sqrt(f)
 
 
-def handtesting():
+def handtesting(a,b,f):
     try:
         result = formula(a,b,f)
-        print(result)
+        print(f"Результат: {result}") 
         return result
         
     except ZeroDivisionError:
@@ -19,7 +19,7 @@ def handtesting():
         return "Нельзя взять корень из отрицательного числа"
 
     except TypeError:
-        print("Ошибка: Неверный тип данных")
+        print("Ошибка типов данных")
         return "Ошибка типов данных"
 
     except Exception as e:      
