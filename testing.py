@@ -2,8 +2,8 @@ import math
 import unittest
 from formula import formula, handtesting
 
-class Test_hand(unittest.TestCase):
-
+class Test_auto(unittest.TestCase):
+    #тесты будут запускаться в алфавитном порядке
     def test_normal_case(self):
         result = handtesting(5, 3, 16)
         self.assertEqual(result, math.sqrt(2)/2 + 4)
